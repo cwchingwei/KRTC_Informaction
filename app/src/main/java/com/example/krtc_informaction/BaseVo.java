@@ -1,4 +1,4 @@
-package com.example.krtc_informaction.model;
+package com.example.krtc_informaction;
 
 import com.google.gson.annotations.SerializedName;
 

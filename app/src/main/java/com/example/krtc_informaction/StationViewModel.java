@@ -1,9 +1,9 @@
-package com.example.krtc_informaction.view_model;
+package com.example.krtc_informaction;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import com.example.krtc_informaction.model.Station;
+
 import java.util.ArrayList;
 import java.util.List;
 

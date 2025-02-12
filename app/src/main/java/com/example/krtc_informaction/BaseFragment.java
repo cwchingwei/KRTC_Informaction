@@ -1,6 +1,5 @@
-package com.example.krtc_informaction.base;
+package com.example.krtc_informaction;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,16 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.SimpleItemAnimator;
 import androidx.viewbinding.ViewBinding;
-
-import com.example.krtc_informaction.api.ApiStoreService;
-import com.orhanobut.logger.Logger;
-
-import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -30,7 +20,6 @@ import io.reactivex.observers.DisposableObserver;
 import io.reactivex.schedulers.Schedulers;
 
 public abstract class BaseFragment<VB extends ViewBinding> extends Fragment {
-    protected static final ApiStoreService sService = ApiStoreService.initialize();
     protected VB binding;  // ✅ ViewBinding 變數
     private CompositeDisposable mCompositeDisposable;
     private Toast mToast;

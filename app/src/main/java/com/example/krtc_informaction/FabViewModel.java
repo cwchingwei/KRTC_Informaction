@@ -1,4 +1,4 @@
-package com.example.krtc_informaction.view_model;
+package com.example.krtc_informaction;
 
 import android.view.View;
 import androidx.lifecycle.LiveData;

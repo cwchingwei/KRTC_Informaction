@@ -1,17 +1,10 @@
 package com.example.krtc_informaction;
 
 import android.animation.ObjectAnimator;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-
-import com.example.krtc_informaction.view_model.FabViewModel;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -22,7 +15,6 @@ import com.example.krtc_informaction.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
