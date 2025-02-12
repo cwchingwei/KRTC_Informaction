@@ -85,11 +85,9 @@ public class FirstFragment extends BaseFragment<FragmentFirstBinding> {
         binding.recyclerView.setAdapter(mAdapter);
 
         stationViewModel.getStations().observe(getViewLifecycleOwner(), stations -> {
-            if (stations != null && !stations.isEmpty()) {
-                mAdapter.submitList(stations);
-                mAdapter.notifyDataSetChanged();
-            } else {
-                getStations(null); // 第一次載入數據
+            if (!stations.isEmpty()) {
+                Log.d("FirstFragment", "isEmpty");
+                mAdapter.submitList(new ArrayList<>(stations)); // ✅ 確保是新列表，避免 DiffUtil 優化導致 UI 不更新
             }
         });
 
@@ -133,6 +131,18 @@ public class FirstFragment extends BaseFragment<FragmentFirstBinding> {
             navController.navigate(R.id.action_FirstFragment_to_SecondFragment, bundle);
         });
 
+        // ✅ 讀取資料
+        binding.btnLoadData.setOnClickListener(v -> {
+            showToast("正在讀取資料...");
+            getStations(null); // 🚀 請求 API 獲取數據
+        });
+
+        // ✅ 清除資料
+        binding.btnClearData.setOnClickListener(v -> {
+            showToast("資料已清除！");
+            stationViewModel.setStations(new ArrayList<>());
+            mAdapter.submitList(new ArrayList<>());
+        });
     }
 
     @Override

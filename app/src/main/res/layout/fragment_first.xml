@@ -6,6 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:ignore="ContentDescription">
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- 讀取資料按鈕 -->
+        <Button
+            android:id="@+id/btnLoadData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="讀取資料"
+            android:textColor="@android:color/white"/>
+
+        <!-- 清除資料按鈕 -->
+        <Button
+            android:id="@+id/btnClearData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除資料"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
     <com.scwang.smart.refresh.layout.SmartRefreshLayout
         android:id="@+id/smart_refresh"
         android:layout_width="match_parent"
