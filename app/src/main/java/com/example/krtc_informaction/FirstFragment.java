@@ -134,7 +134,7 @@ public class FirstFragment extends BaseFragment<FragmentFirstBinding> {
         // ✅ 讀取資料
         binding.btnLoadData.setOnClickListener(v -> {
             showToast("正在讀取資料...");
-            getStations(null); // 🚀 請求 API 獲取數據
+            getStations(binding.smartRefresh);
         });
 
         // ✅ 清除資料
