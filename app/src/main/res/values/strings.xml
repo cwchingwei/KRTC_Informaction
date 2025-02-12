@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KRTC_Informaction</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">高雄捷運站列表</string>
+    <string name="second_fragment_label">Google Map</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>

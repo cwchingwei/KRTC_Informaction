@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="background_light">#F5F5F5</color>  <!-- 淺灰色背景 -->
+    <color name="primary">#3F51B5</color>  <!-- 主要按鈕顏色 -->
+    <color name="white">#FFFFFF</color>  <!-- 白色 -->\
+    <color name="gray">#757575</color>  <!-- 次要文字顏色 -->
+
+</resources>

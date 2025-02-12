@@ -1,0 +1,60 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="12dp"
+android:background="@drawable/item_bg">
+
+<!-- 圓形 Icon -->
+<TextView
+    android:id="@+id/tvStationIcon"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@drawable/circle_background"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+<!-- 車站資訊 -->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="12dp"
+    app:layout_constraintStart_toEndOf="@id/tvStationIcon"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- 車站名稱 -->
+    <TextView
+        android:id="@+id/tvStationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <!-- 車站座標 -->
+    <TextView
+        android:id="@+id/tvCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#888888"/>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
